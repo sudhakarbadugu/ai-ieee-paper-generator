@@ -1,0 +1,224 @@
+--- Slide ppt/slides/slide1.xml ---
+Hybrid Multi-Agent Decision Support System forMomentum-Based Financial Trading
+Sudhakar Badugu
+RA2412049015073
+Guide
+M. Baskar
+First Review01-Feb-2026
+
+--- Slide ppt/slides/slide2.xml ---
+Abstract
+Financial markets are complex and uncertain, making single-model trading systems unreliable.
+This project proposes a Hybrid Multi-Agent Decision Support System 
+It integrates rule-based filtering, predictive analytics, reinforcement learning, and risk management.
+Specialized agents independently analyse:
+Market trend and momentum alignment
+Technical structure and volatility behaviour
+Predictive directional confidence
+Risk feasibility and trade management
+A Weighted Decision Fusion mechanism combines agent outputs
+The system generates explainable, ranked trade recommendations.
+The framework aims to improve decision reliability, adaptability, and risk control
+Designed for real-world usability with controlled automation.
+
+--- Slide ppt/slides/slide3.xml ---
+Introduction
+Financial trading decisions involve multiple interacting factors, not a single signal
+Traders often struggle to filter high-quality opportunities from market noise
+Rule-based systems lack adaptability under changing market conditions
+Pure AI models behave as black boxes and ignore trading discipline
+Effective trading requires coordination between analysis, execution, and risk control
+Human traders naturally follow a multi-step decision process
+Translating this decision process into a structured AI system is challenging
+This project explores a multi-agent approach to model real trading workflows
+
+--- Slide ppt/slides/slide4.xml ---
+Motivation
+Traders often face information overload with conflicting market signals
+Many AI trading models fail in real markets due to lack of risk control
+Over-automation in trading systems increases financial and operational risk
+There is a gap between academic trading models and practical usability
+Experienced traders follow structured, rule-driven decision processes
+AI systems rarely replicate this disciplined workflow
+Desire to combine human trading logic with adaptive intelligence
+To design a Multi-Agent Framework for algorithmic swing trading
+To decompose market analysis into specialized autonomous agents
+To implement a Weighted Signal Fusion mechanism for decision synthesis
+To train a Reinforcement Learning agent for adaptive entry and exit strategies
+
+--- Slide ppt/slides/slide5.xml ---
+Literature Review
+Title of the Paper
+Journal / Source
+Dataset Used
+Key Contributions
+Other Observations / Limitations
+A-Trader: A Multi-Agent System for Financial Trading
+Applied Intelligence (Springer), 2024
+Forex market historical data
+Proposed a modular multi-agent trading system with task-specific agents and decision aggregation
+Focused mainly on Forex; limited use of deep learning and no reinforcement learning adaptation
+TradingAgents: Multi-Agent LLM Framework for Financial Trading
+arXiv, 2024
+U.S. stock market data
+Introduced collaborative agent roles (technical, fundamental, risk) inspired by trading firms
+Uses LLMs; computationally expensive and not optimized for real-time trading
+Deep Reinforcement Learning for Portfolio Management
+Global Finance Journal, 2024
+DJIA, S&P-100 historical data
+Applied actor-critic RL models for dynamic portfolio allocation with risk control
+Does not integrate multi-agent signal analysis or technical patterns
+Hybrid LSTM-PPO Model for Portfolio Optimization
+arXiv, 2025
+Multi-asset equity and crypto datasets
+Combined LSTM forecasting with PPO-based reinforcement learning for improved returns
+Focused on portfolio weights; lacks agent-based decomposition
+Sentiment Analysis in Financial Markets Using BERT
+IEEE Access, 2023
+Financial news headlines (Reuters, Bloomberg)
+Demonstrated effectiveness of NLP-based sentiment in enhancing trading decisions
+Sentiment treated independently; not integrated into a unified decision framework
+
+--- Slide ppt/slides/slide6.xml ---
+Innovation
+Multi-agent architecture inspired by real trading desk workflows
+Clear separation of analysis, decision, and risk control responsibilities
+Confidence-weighted fusion to rank trade opportunities objectively
+Probabilistic prediction instead of unreliable price forecasting
+Reinforcement learning applied only to post-entry trade management
+Rule-guided learning to prevent unstable AI behavior
+Explainable recommendations with transparent decision rationale
+Modular design enabling easy future extensions
+
+--- Slide ppt/slides/slide7.xml ---
+Proposed Methodology
+Step 1: Data Collection & Preprocessing
+Collect historical OHLCV data from Yahoo Finance and NSE Bhav Copy
+Perform data cleaning, normalization, and time-series feature engineering
+Step 2: Rule-Based Candidate Selection
+Market Trend Agent evaluates overall market direction
+Rule-Based Eligibility Agent applies trend template criteria
+Filters stocks based on trend alignment, liquidity, and volatility
+Step 3: Technical & Momentum Analysis
+Technical Structure Agent analyzes price structure and momentum
+Identifies volatility contraction, breakout readiness, and relative strength
+Step 4: Predictive Analytics
+Predictive Analytics Agent estimates directional probability
+Uses ML/DL models to generate confidence scores (not price targets)
+Step 5: Confidence-Based Signal Fusion
+Outputs from all agents are combined
+Composite Confidence Score (CCS) is computed
+High-quality trade opportunities are ranked and shortlisted
+Step 6: Reinforcement Learning Trade Management
+RL agent activates after trade entry
+Optimizes hold, trail stop, partial exit, or full exit decisions
+Step 7: Portfolio Risk Validation & Execution
+Portfolio Risk Agent enforces position sizing and drawdown limits
+Approved recommendations are displayed or executed in controlled mode
+
+--- Slide ppt/slides/slide8.xml ---
+Updated Product Vision
+Build an intelligent decision-support system for momentum-based trading
+Emphasize decision quality over trade frequency
+Combine rule-based discipline with adaptive AI models
+Ensure strong risk control and capital protection
+Provide transparent and explainable trade recommendations
+Support both manual and controlled automated execution
+Design a modular and extensible multi-agent architecture
+Bridge the gap between academic AI research and real trading practice
+
+--- Slide ppt/slides/slide9.xml ---
+Updated Product Backlog
+To build an intelligent decision-support system for momentum trading.
+Market Trend Analysis Agent for overall market alignment
+Rule-Based Stock Eligibility Module (Trend Template)
+Feature Extraction Pipeline for OHLCV and momentum features
+Technical Structure & Momentum Analysis Agent
+Predictive Analytics Agent (ML/DL based confidence scoring)
+Composite Confidence Score (CCS) fusion mechanism
+Reinforcement Learning–based Trade Management Agent
+Portfolio Risk Management and Validation Module
+
+--- Slide ppt/slides/slide10.xml ---
+Road Map
+Sprint
+Timeline
+Activities
+Sprint 1 – Problem Definition, Literature Review & System Design
+Dec 2025 – Jan 2026
+Finalized problem statement, objectives, scope, literature survey, multi-agent architecture design, dataset finalization
+Sprint 2 – Core Rule-Based & Feature Modules
+Jan 2026
+Feature extractor, market trend agent, rule-based eligibility (trend template)
+Sprint 3 – Predictive Analytics & Confidence Fusion
+Feb 2026
+Predictive analytics agent (ML/DL), Composite Confidence Score (CCS) mechanism
+Sprint 4 – RL & Risk Management Modules
+Feb 2026
+Reinforcement learning trade management agent, portfolio and risk manager
+Sprint 5 – System Integration & Testing
+Feb – Mar 2026
+Multi-agent integration, workflow validation, controlled execution setup
+Sprint 6 – Evaluation & Optimization
+Mar 2026
+Backtesting, performance evaluation, model tuning and refinement
+Sprint 7 – Documentation & Final Submission
+Mar 2026
+Final report, PPT, viva preparation, and submission
+
+--- Slide ppt/slides/slide11.xml ---
+Sprint Planning
+Sprint Goal: Build a functional decision-support pipeline
+Defined clear sprint goals aligned with project milestones
+Identified core modules to be implemented in the sprint
+Broke down tasks across data, rules, and architecture components
+Prioritized foundational features before advanced intelligence
+Allocated time for implementation, testing, and validation
+Established clear “definition of done” for each deliverable
+Planned incremental integration of modules
+Included buffer for refinement and issue resolution
+
+--- Slide ppt/slides/slide12.xml ---
+UI Design
+Depth market trend analysis
+Display the rule based filtered stocks
+Dashboard for ranked trade recommendations
+Display of CCS score and explanation
+
+--- Slide ppt/slides/slide13.xml ---
+Architecture
+
+--- Slide ppt/slides/slide14.xml ---
+Flow Diagram
+
+--- Slide ppt/slides/slide15.xml ---
+Sprint  – Deliverables Demo
+Problem & Planning
+• Problem statement
+• Objectives & scope
+Research & Design
+• Literature survey
+• Multi-agent architecture
+Data & Features
+• Yahoo Finance & NSE data
+• Feature extraction pipeline
+Rule-Based Intelligence
+• Market trend validation
+• Trend Template eligibility
+Initial System Output
+• Stock shortlist generated
+• End-to-end rule-based flow tested
+
+--- Slide ppt/slides/slide16.xml ---
+Conclusion
+Problem statement, objectives, and project scope clearly finalized
+Comprehensive literature survey and system design completed
+Multi-agent architecture successfully defined and documented
+Reliable datasets collected from Yahoo Finance and NSE Bhav Copy
+Feature extraction and preprocessing pipeline implemented
+Rule-based trend template and eligibility engine completed
+Initial end-to-end recommendation flow validated
+Strong foundation established for predictive and RL modules
+
+--- Slide ppt/slides/slide17.xml ---
+Thank You
